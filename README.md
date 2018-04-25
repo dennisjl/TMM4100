@@ -60,12 +60,14 @@ In a network application, End system exchange messages with each other. Messages
 #### How to send message from source end system to destination system:
 The source breaks long messages into smaller chunks of data, aka __packets__. Inbetween source and destination, each packet travels through communication links and packet. Packets are transmitted over each communication link at a rate equal to full transmission rate of the link.
 
-####Packet: 
+#### Packet: 
 Small bites of data chunks 
 * Usually have multiple links attached to it.
 * For each link, the packet switch has an outputbuffer, which property is to store packets that the router is about to send into that link. Plays a keyrole in packet switching.
 
+Two fundamental approaches to moving data through network:
 __Packet switches:__ A method to move data through a network. Made of routers and linklayer switches.
+__Circuit switching:__ A method where the resources needed along a path to provide communivation session between the end systems.
 
 When a packet arrive to a router:
 * router looks up in a forward tabel, and then find which connection the packet should be sent at.
