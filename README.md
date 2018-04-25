@@ -40,7 +40,7 @@ Applications and end systems = _edge of the network_
 
 __Access network:__ the network that physically connects an end system to the first router. Does this on a path from end system to other distant end system.
 
-__DSL:__ (Digistal subscriber line): The most prevalent type of broadband residentaial access.
+__DSL:__ (Digistal Subscriber Line): The most prevalent type of broadband residentaial access.
 * Typically obatined from local phone company that provides wired local phone access.
 * Phoneline carries both data and traditional phone signal at different frequencies.
 ** Makes DSL link appear as if there were 3 separate links, ----> phone and internet connection can share DSL link
@@ -49,3 +49,7 @@ Important characteristic of cable internet access:
 * It is a shared broadcast medium
 * Every packet sent by the head end travels downstream on every link to every home
 * Every packet sent by a home travels upstream channel to head end
+
+__LAN:__ (Local Area Network): used to connect an end system to the edge router. Many types of LAN technology.
+* Ethernet is by far the most prevalent access technology.
+Ethernet users use teisted-pair copper wire to connect to an Ethernet switch, which is connected into the large internet.
