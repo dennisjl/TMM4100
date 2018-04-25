@@ -113,3 +113,20 @@ __Total end-to-end delay:__ time required for the packet to travel from start to
 * N-1 routers in this example. assumes that the network are uncongested, s.a. que delay disappear.
 
 
+## Protocol Layers and their Service Models (1.5):
+### Protocol Layering:
+To provide structure to the design of network protocols, the network desginers organize protocols, and the network hardware and software that implements the protocols in layers. excist 5 of them:
+1. Application layer
+2. Transport layer
+3. Network layer
+4. Link layer
+5. Physical layer
+
+### Application Layer:
+Where the network applications and application reside. Includes many protocols s.a:
+* HTTP
+* SMTP
+* FTP
+
+Distributed over multiple end systems, with the application in one end-system using the protocol to exchange packets of info with the application in another end system.
+* Refer to this packet of info at the application layer as a message
