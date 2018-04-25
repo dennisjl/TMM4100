@@ -1,18 +1,23 @@
 # TMM4100
 KTN-Notes
 
-## Chapter 1: Computer networks and the Internet
+# Chapter 1: Computer networks and the Internet
 
 ### Internet:
 Network that interconnects hundreds of millions of computing devices throughout the world.
 All devices are called hosts or end systems.
 
-### End systems:
+### End systems (Hosts):
 Connected together by a network of communication links and __packets switchets__
 A packet switch takes a packet arriving on one of it's incoming communication links and forwards that packet on one of it's outgoing communication links.
 Two most prominent types:
 1. Router
 2. Link-layer switches
+
+### Network protocols:
+A protocol defines the format and the order of messages exchanges between two or more communication entities
+
+Also the actions taken on transmission and/or receipt of a message or other event.
 
 ### TCP/IP:
 Two of the most important protocols in the internet. IP specifies the format of the packets that are sent and receives among routers and end systems.
@@ -26,7 +31,8 @@ __Application Programming Interface (API)__, specifies how a program running on 
 End systems attached to Internet provides an API
 
 
-### Network protocols:
-A protocol defines the format and the order of messages exchanges between two or more communication entities
+## The Network Edge (1.2):
+__Host= End-systems__. Can be further divided into two categories:
+1. Client
+2. Server
 
-Also the actions taken on transmission and/or receipt of a message or other event.
