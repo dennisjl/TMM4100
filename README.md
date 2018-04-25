@@ -31,6 +31,8 @@ __Application Programming Interface (API)__, specifies how a program running on 
 End systems attached to Internet provides an API
 
 
+
+
 ## The Network Edge (1.2):
 __Host= End-systems__. Can be further divided into two categories:
 1. Client
@@ -53,6 +55,10 @@ Important characteristic of cable internet access:
 __LAN:__ (Local Area Network): used to connect an end system to the edge router. Many types of LAN technology.
 * Ethernet is by far the most prevalent access technology.
 Ethernet users use twisted-pair copper wire to connect to an Ethernet switch, which is connected into the large internet.
+
+
+
+
 
 ## The Network Core (1.3):
 In a network application, End system exchange messages with each other. Messages can contain anything the app designer wants.
@@ -87,5 +93,23 @@ Properties:
 * The packet switch must receive the entire packet before it can begin to transmit the first bit of the packet onto the outbound link
 * Total transmission delay: N * L/R, where N = total connections given N-1 routers.
 * Extra delay can occure due to waiting for the previous package (__que delay__)
+
+
+
+## Delay, Loss and Throughput in Packet-Switched Networks (1.4):
+
+__Processing delay:__ time required to check the header of a package and find out where it is supposed to go
+
+__Queuing delay__: time required waiting for the other packages to get sent on the link
+
+__Transmission delay:__ time required to push packets on the link. Defined by L/R. ((number of bits)/(transmission speed))
+
+__Propagation delay:__ time required to travel from one node to the next. d/s
+
+__Total Nodal delay:__ sum of those 4 above.
+
+__Total end-to-end delay:__ time required for the packet to travel from start to end, throught the routers. If there are several swithces, we use the transmission delay as well (dtrans)
+* dend-to-end = N(dprocess + dtrans + dprop)
+* N-1 routers in this example. assumes that the network are uncongested, s.a. que delay disappear.
 
 
