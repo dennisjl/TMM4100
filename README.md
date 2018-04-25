@@ -36,3 +36,12 @@ __Host= End-systems__. Can be further divided into two categories:
 1. Client
 2. Server
 
+Applications and end systems = _edge of the network_
+
+__Access network:__ the network that physically connects an end system to the first router. Does this on a path from end system to other distant end system.
+
+Today, the most prevalent types of braodband residential access are __DSL__ (Digital subscriber line). One typically obtains DSL Internet access from the same local telephone company that provides wired local phone access. Phoneline carries both data and traditional phone signals simultaneously, which are encoded at different frequencies. This approach makes the DSL link appear as if there were 3 separate links, -----> phone and internet connection can shre DSL link
+
+* Important characteristic of cable internet access is that its a shared broadcast medium. 
+* Every packet sent by the head end travels downstream on every link to every home
+* Every packet sent by a home travels upstream channel to head end
