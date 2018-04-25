@@ -165,3 +165,22 @@ Job: move entire frames from one network element to an adjacent network element.
 The job of the physical layer is to move individual bits within the frame from one node to the next.
 
 the protocols in this layer are again link dependent and further depend on the actual transmission medium of the link
+
+
+
+## Networks under attack (1.6):
+The field of network security is about how the bad guys can attack computer network and about how we can defend networks against those attacks, or better yet, design new architectures that are immune to such attacks.
+
+Malware – that can enter and infect our devices. Our compromised host may also be enrolled in a network of thousands of similarly compromised devices, collectively known as a botnet, which the bad guys control and leverage for spam e-mail distribution or distribution denial-of-service attacks against targeted hosts. 
+
+Much of the malware out there today is self-replication: once it infects one host, from that host its seeks entry into other hosts over the Internet, and from the newly infected hosts, it seeks entry into yet more hosts. 
+* Viruses are malware that require some form of user interaction to infect the user’s device
+* Worms are malware that can enter a device without any explicit user interaction.
+
+__Dos__: Denial of service. Vulnerability attack: this involves sending a few well-crafted messages to a vulnerable application or operating system running on a targeted host
+
+__Bandwith flooding:__ the attacker sends a deluge of packets to the targeted host – so many packets that the target’s access link becomes clogged preventing legitimate packets from reaching the server
+
+__Connection flooding:__ the attacker establishes a large number of half-pen or fully open TCP connections at the target host. The host can become so bogged down with these bogus connections that it stops accepting legitimate connections.
+
+__Packet sniffer:__ passive reciver that records a copy of every packet that flies by. They do not inject packets into the channel and are difficult to detect.
