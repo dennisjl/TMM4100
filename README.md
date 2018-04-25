@@ -17,11 +17,16 @@ Two most prominent types:
 ##### TCP/IP:
 Two of the most important protocols in the internet. IP specifies the format of the packets that are sent and receives among routers and end systems.
 
-
 Internet applications run on end systems - they dont run in the packet switches in the network core. Packet switches does not concern with the application that is the source or sink of data.
 
 
 ##### API:
 __Application Programming Interface (API)__, specifies how a program running on an end system ask the Internet infrastructure to deliver data to a specific destination running on another end system. 
+
 End systems attached to Internet provides an API
 
+
+##### Network protocols:
+A protocol defines the format and the order of messages exchanges between two or more communication entities
+
+Also the actions taken on transmission and/or receipt of a message or other event.
