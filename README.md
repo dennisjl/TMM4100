@@ -60,15 +60,30 @@ In a network application, End system exchange messages with each other. Messages
 #### How to send message from source end system to destination system:
 The source breaks long messages into smaller chunks of data, aka __packets__. Inbetween source and destination, each packet travels through communication links and packet. Packets are transmitted over each communication link at a rate equal to full transmission rate of the link.
 
-__Packet:__ Small bites of data chunks
+####Packet: 
+Small bites of data chunks 
+* Usually have multiple links attached to it.
+* For each link, the packet switch has an outputbuffer, which property is to store packets that the router is about to send into that link. Plays a keyrole in packet switching.
 
 __Packet switches:__ A method to move data through a network. Made of routers and linklayer switches.
 
 When a packet arrive to a router:
 * router looks up in a forward tabel, and then find which connection the packet should be sent at.
 
+__Forwarding table:__ maps destination addresses to the routers outbound links.
+
 
 __Example:__ if a source system or a packet switch is sending a packet of L bits over a link with transmission rate R bits/sec, then the time to transmit the packet of L/R seconds
 * L = number of bits
 * R = transmissionspeed [bits/s]
 * L/R = time in seconds
+
+#### Store-and-forward transmission:
+The method most packet switches use at the inputs to the links.
+
+Properties:
+* The packet switch must receive the entire packet before it can begin to transmit the first bit of the packet onto the outbound link
+* Total transmission delay: N * L/R, where N = total connections given N-1 routers.
+* Extra delay can occure due to waiting for the previous package (__que delay__)
+
+
