@@ -52,4 +52,9 @@ Important characteristic of cable internet access:
 
 __LAN:__ (Local Area Network): used to connect an end system to the edge router. Many types of LAN technology.
 * Ethernet is by far the most prevalent access technology.
-Ethernet users use teisted-pair copper wire to connect to an Ethernet switch, which is connected into the large internet.
+Ethernet users use twisted-pair copper wire to connect to an Ethernet switch, which is connected into the large internet.
+
+## The Network Core (1.3):
+In a network application, End system exchange messages with each other. Messages can contain anything the app designer wants.
+
+
