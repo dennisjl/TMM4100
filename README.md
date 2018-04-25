@@ -122,7 +122,7 @@ To provide structure to the design of network protocols, the network desginers o
 4. Link layer
 5. Physical layer
 
-### Application Layer:
+### 1. Application Layer:
 Where the network applications and application reside. Includes many protocols s.a:
 * HTTP
 * SMTP
@@ -130,3 +130,38 @@ Where the network applications and application reside. Includes many protocols s
 
 Distributed over multiple end systems, with the application in one end-system using the protocol to exchange packets of info with the application in another end system.
 * Refer to this packet of info at the application layer as a message
+
+### 2. Transport Layer:
+Provides end-end-communication.
+
+2 main transport protocols:
+1. TCP
+2. UDP
+
+TCP provides connection-oriented services to its applications. Includes guaranteed delivery of application-layer message to the destiantion and flowcontrol
+
+UDP provides connectionless service to its applications. No-frill service that provide no reliability, no flow control, and no congestion control.
+
+
+### 3. Network layer:
+Responsible for moving network-layer packets (datagrams) from one host to another. 
+
+The internet transport-layer protocol in a source host passes a transport-layer protocol in a source host passes a transport-layer segment and a destination address to the network layer.
+
+Includes the celebrated IP protocol, which defines the fields in the datagram as well as how the end systems and routers act on these fields.
+
+
+### 4. Link layer:
+Routes a datagram through a series of routers between the source and destination. 
+
+__how to move a packet from one node to the next (in a route):__ the network layer relies on the services of the link layer. Services provided by the link layer depend on the specific link-layer protocols that is employed over the link. 
+
+Refer to the link-layer packets as frames.
+
+Job: move entire frames from one network element to an adjacent network element.
+
+
+### 5. Physical layer:
+The job of the physical layer is to move individual bits within the frame from one node to the next.
+
+the protocols in this layer are again link dependent and further depend on the actual transmission medium of the link
