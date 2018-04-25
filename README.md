@@ -13,3 +13,11 @@ A packet switch takes a packet arriving on one of it's incoming communication li
 Two most prominent types:
 1. Router
 2. Link-layer switches
+
+##### TCP/IP:
+Two of the most important protocols in the internet. IP specifies the format of the packets that are sent and receives among routers and end systems.
+
+
+Internet applications run on end systems - they dont run in the packet switches in the network core. Packet switches does not concern with the application that is the source or sink of data.
+
+End systems attached to the Internet provide an __Application Programming Interface (API)__ that specifies how a program running on one end system asks the Internet infrastructure to deliver data to a specific destination running on another end system.
