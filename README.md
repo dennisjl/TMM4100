@@ -60,4 +60,15 @@ In a network application, End system exchange messages with each other. Messages
 #### How to send message from source end system to destination system:
 The source breaks long messages into smaller chunks of data, aka __packets__. Inbetween source and destination, each packet travels through communication links and packet. Packets are transmitted over each communication link at a rate equal to full transmission rate of the link.
 
-example: if a source system or a packet switch is sending a packet of L bits over a link with transmission rate R bits/sec, then the time to transmit the packet of L/R seconds
+__Packet:__ Small bites of data chunks
+
+__Packet switches:__ A method to move data through a network. Made of routers and linklayer switches.
+
+When a packet arrive to a router:
+* router looks up in a forward tabel, and then find which connection the packet should be sent at.
+
+
+__Example:__ if a source system or a packet switch is sending a packet of L bits over a link with transmission rate R bits/sec, then the time to transmit the packet of L/R seconds
+* L = number of bits
+* R = transmissionspeed [bits/s]
+* L/R = time in seconds
