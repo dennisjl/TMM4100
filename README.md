@@ -184,3 +184,21 @@ __Bandwith flooding:__ the attacker sends a deluge of packets to the targeted ho
 __Connection flooding:__ the attacker establishes a large number of half-pen or fully open TCP connections at the target host. The host can become so bogged down with these bogus connections that it stops accepting legitimate connections.
 
 __Packet sniffer:__ passive reciver that records a copy of every packet that flies by. They do not inject packets into the channel and are difficult to detect.
+
+
+
+# Chapter 2: Application Layer:
+Network core devices do not function at the application layer, but function at lower layers. (Specifically at network layer and below).
+
+__Network Application Architectures:__ Client server vs p2p architecture.
+
+### Client Server:
+Characteristics:
+* Client do not communicate with each other.
+* Server has a fixed, well-known address (IP), always on.
+* Client can always contact the server by sending a packet to the server's IP adress, due to the fact over.
+
+### P2P:
+Characteristics:
+* Minimal or no reliance on dedicated serveres in data centers
+* Exploits direct communication between pairs of intermittently connected hosts, called peers.
