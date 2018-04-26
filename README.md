@@ -202,3 +202,20 @@ Characteristics:
 Characteristics:
 * Minimal or no reliance on dedicated serveres in data centers
 * Exploits direct communication between pairs of intermittently connected hosts, called peers.
+
+
+For many instant message applications, servers are used to track IP addresses of users, but user2user messages are sent directly between user hosts.
+
+
+__The interface between the process and the computer network:__ A process sends messages into, and receives messages from, the network through a software itnerface called a socket.
+
+Anology to understand processes and sockets:
+* Process = house
+* Socket = door
+When a process wants to send a message to another process on another host, it shoved the message out its door.
+
+__Socket:__ interface between the application layer and transport layer within a host. 
+
+It is also referred to as the API between the application and the network, since the socket is the programming interface with which network applications are built.
+
+__Addressing Processes:__ Host is identified by its IP-address (32-bit quantity). IP= unique identifier for host.
